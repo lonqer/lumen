@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Lumen | Neighborhood Coffee</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="night">
+    <header class="hero" id="top">
+        <nav class="nav">
+            <div class="brand">Cafe&nbsp;Lumen</div>
+            <div class="nav-links">
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#location">Visit</a>
+                <a href="#contact" class="btn btn-small">Reserve</a>
+                <button type="button" class="theme-toggle" aria-pressed="false" data-theme-toggle>
+                    <span class="theme-toggle__icon" aria-hidden="true">Glow</span>
+                    <span class="theme-toggle__label">Dawn palette</span>
+                </button>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="tag">Neighborhood roastery &amp; bakehouse</p>
+                <h1>Sip the city's morning light.</h1>
+                <p class="lead">Small-batch espresso, slow-fermented pastries, and a cozy corner for your next idea. Drop in for our seasonal pours or stay awhile and work with reliable Wi-Fi and plenty of outlets.</p>
+                <div class="hero-cta">
+                    <a class="btn" href="#menu">View our menu</a>
+                    <a class="btn btn-outline" href="#location">Plan a visit</a>
+                    <a class="btn btn-outline btn-glass" href="https://order.cafelumen.co" target="_blank" rel="noopener">Order ahead</a>
+                </div>
+                <aside class="hero-special" aria-label="Daily special">
+                    <span class="hero-special__tag">On bar today</span>
+                    <h2 class="hero-special__title">Saffron maple cortado &amp; brown-butter cruffin</h2>
+                    <p class="hero-special__text">A silky two-shot cortado infused with house-made saffron maple, paired with our laminated cruffin finished with vanilla bean sugar. Available through Sunday while they last.</p>
+                </aside>
+                <div class="hero-ticker" data-ticker>
+                    <button class="hero-ticker__control" type="button" data-ticker-prev aria-label="Previous highlight">‹</button>
+                    <div class="hero-ticker__viewport" aria-live="polite">
+                        <div class="hero-ticker__track" data-ticker-track>
+                            <div class="hero-ticker__item" data-ticker-item>
+                                <span class="hero-ticker__label">Barista Lab</span>
+                                <p>Wed 5pm · Latte art workshop with our head trainer.</p>
+                            </div>
+                            <div class="hero-ticker__item" data-ticker-item>
+                                <span class="hero-ticker__label">Roast drop</span>
+                                <p>Sat 9am · Ethiopia Halo Beriti honey lot, 80 bags only.</p>
+                            </div>
+                            <div class="hero-ticker__item" data-ticker-item>
+                                <span class="hero-ticker__label">Community</span>
+                                <p>Sun 11am · Espresso &amp; sketch meetup hosted on the patio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="hero-ticker__control" type="button" data-ticker-next aria-label="Next highlight">›</button>
+                </div>
+            </div>
+            <div class="hero-images" data-parallax-group>
+                <div class="hero-backdrop" aria-hidden="true" data-parallax-depth="0.05"></div>
+                <figure class="hero-media hero-media--primary" data-parallax-depth="0.2">
+                    <video class="hero-media__video" src="https://cdn.coverr.co/videos/coverr-steamy-pour-over-espresso-1708071461434?download=1" poster="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" autoplay muted loop playsinline></video>
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Barista steaming milk behind the espresso bar" loading="lazy">
+                    <div class="hero-steam" aria-hidden="true"></div>
+                </figure>
+                <figure class="hero-media hero-media--secondary" data-parallax-depth="0.38">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80" alt="Fresh pastries cooling on the counter" loading="lazy">
+                </figure>
+                <figure class="hero-media hero-media--accent" data-parallax-depth="0.5">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80" alt="Cozy cafe seating by the window" loading="lazy">
+                </figure>
+                <div class="hero-stat-card" data-parallax-depth="0.55" data-stat-key="seasonal">
+                    <span class="hero-stat-card__tag">Roastery note</span>
+                    <strong data-stat-headline>27 seasonal lots roasted on-site</strong>
+                    <p data-stat-detail>Rotating single origins cupped weekly. Pair them with house-fermented pastries for the full experience.</p>
+                    <button type="button" class="hero-stat-card__cta" data-roaster-modal-open>Learn the roast</button>
+                </div>
+                <div class="hero-media hero-media--badge" aria-hidden="true" data-parallax-depth="0.68">
+                    <span>Since 2014</span>
+                </div>
+                <span class="hero-illustration hero-illustration--bean" aria-hidden="true"></span>
+                <span class="hero-illustration hero-illustration--leaf" aria-hidden="true"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu" id="menu" data-reveal>
+            <div class="section-heading">
+                <span class="tag">Menus</span>
+                <h2>Pour-overs, espresso flights, and oven-fresh pastries</h2>
+                <p>Crafted from fair-trade beans and baked in-house each morning. Vegan and gluten-friendly options rotate weekly.</p>
+            </div>
+            <div class="menu-controls">
+                <span class="menu-controls__label">Filter</span>
+                <div class="menu-filter-chips" role="tablist">
+                    <button class="menu-filter-chip is-active" data-filter-menu="all" role="tab" aria-selected="true">All</button>
+                    <button class="menu-filter-chip" data-filter-menu="vegan" role="tab" aria-selected="false">Vegan</button>
+                    <button class="menu-filter-chip" data-filter-menu="gluten" role="tab" aria-selected="false">Gluten-friendly</button>
+                    <button class="menu-filter-chip" data-filter-menu="seasonal" role="tab" aria-selected="false">Seasonal</button>
+                </div>
+            </div>
+            <div class="menu-grid" data-menu-grid>
+                <article class="menu-card" data-reveal-child>
+                    <span class="menu-label"><span class="menu-label__icon">*</span>Slow craft coffee</span>
+                    <h3>Signature Coffee</h3>
+                    <ul>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Sunrise Flat White</span>
+                                <span class="item-price">$5.5</span>
+                            </div>
+                            <p class="item-note">cara cara orange brightness, whipped honey silk</p>
+                            <span class="item-tags" data-menu-tags="seasonal"></span>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Cardamom Cold Brew</span>
+                                <span class="item-price">$6</span>
+                            </div>
+                            <p class="item-note">18 hour chill steep, toasted green cardamom</p>
+                            <span class="item-tags" data-menu-tags="vegan seasonal"></span>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Honey Citrus Tonic</span>
+                                <span class="item-price">$5.75</span>
+                            </div>
+                            <p class="item-note">bright tonic lift, grapefruit zest, local honey</p>
+                            <span class="item-tags" data-menu-tags="gluten"></span>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Single Origin Pour-over</span>
+                                <span class="item-price">$7</span>
+                            </div>
+                            <p class="item-note">rotating microlot, washed heirloom florals</p>
+                            <span class="item-tags" data-menu-tags="vegan seasonal"></span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="menu-card" data-reveal-child>
+                    <span class="menu-label"><span class="menu-label__icon">*</span>Bakes &amp; small plates</span>
+                    <h3>Bakery &amp; Small Plates</h3>
+                    <ul>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Brown Butter Kouign-Amann</span>
+                                <span class="item-price">$4.75</span>
+                            </div>
+                            <p class="item-note">caramelized folds, smoked sea salt sparkle</p>
+                            <span class="item-tags" data-menu-tags=""></span>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Rosemary Focaccia Toast</span>
+                                <span class="item-price">$8</span>
+                            </div>
+                            <p class="item-note">lemon ricotta whip, slow-roasted tomato jam</p>
+                            <span class="item-tags" data-menu-tags="vegetarian"></span>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Miso Maple Granola Parfait</span>
+                                <span class="item-price">$6.5</span>
+                            </div>
+                            <p class="item-note">black sesame crunch, yuzu cultured yogurt</p>
+                            <span class="item-tags" data-menu-tags="gluten vegetarian"></span>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Seasonal Soup + Sourdough</span>
+                                <span class="item-price">$9</span>
+                            </div>
+                            <p class="item-note">silky squash bisque, herb gremolata drizzle</p>
+                            <span class="item-tags" data-menu-tags="seasonal gluten"></span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="menu-card" data-reveal-child>
+                    <span class="menu-label"><span class="menu-label__icon">*</span>Tea &amp; botanical sips</span>
+                    <h3>Tea &amp; Non-Coffee</h3>
+                    <ul>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Jasmine Matcha Latte</span>
+                                <span class="item-price">$5.25</span>
+                            </div>
+                            <p class="item-note">ceremonial grade green tea, jasmine steam veil</p>
+                            <span class="item-tags" data-menu-tags="vegan gluten"></span>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Golden Turmeric Steamer</span>
+                                <span class="item-price">$5</span>
+                            </div>
+                            <p class="item-note">fresh ginger heat, cracked peppercorn finish</p>
+                            <span class="item-tags" data-menu-tags="vegan gluten"></span>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Sparkling Hibiscus Cooler</span>
+                                <span class="item-price">$4.75</span>
+                            </div>
+                            <p class="item-note">tart berry hibiscus, candied ginger bubbles</p>
+                            <span class="item-tags" data-menu-tags="vegan gluten seasonal"></span>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <span class="item-name">Heritage Chai</span>
+                                <span class="item-price">$4.5</span>
+                            </div>
+                            <p class="item-note">masala spice blend, toasted coconut sugar</p>
+                            <span class="item-tags" data-menu-tags="gluten"></span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery" data-reveal>
+            <div class="section-heading">
+                <span class="tag">Gallery</span>
+                <h2>Warm light, artisan detail</h2>
+                <p>Step inside our modern-but-cozy space. Tap an image to open the gallery.</p>
+            </div>
+            <div class="gallery-filters" role="tablist">
+                <button class="filter-chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+                <button class="filter-chip" data-filter="interior" role="tab" aria-selected="false">Interior</button>
+                <button class="filter-chip" data-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+                <button class="filter-chip" data-filter="food" role="tab" aria-selected="false">Food</button>
+            </div>
+            <div class="gallery-grid" data-gallery-grid>
+                <a href="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?auto=format&fit=crop&w=1600&q=80" class="gallery-item glightbox" data-gallery="cafe" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?auto=format&fit=crop&w=600&q=80" alt="Fresh croissant on a plate">
+                    <div class="gallery-caption"><span>Morning pastry</span><p>Brown-butter croissant laminated in-house.</p></div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=1600&q=80" class="gallery-item glightbox" data-gallery="cafe" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=80" alt="Interior seating with plants">
+                    <div class="gallery-caption"><span>Lumen lounge</span><p>Sun-soaked nook with locally crafted ceramics.</p></div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80" class="gallery-item glightbox" data-gallery="cafe" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Barista brewing coffee">
+                    <div class="gallery-caption"><span>Slow pour</span><p>Honey process natural dialed in on the Modbar.</p></div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=1600&q=80" class="gallery-item glightbox" data-gallery="cafe" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=600&q=80" alt="Outdoor patio tables">
+                    <div class="gallery-caption"><span>Patio nights</span><p>Thursday vinyl sessions under string lights.</p></div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1600&q=80" class="gallery-item glightbox" data-gallery="cafe" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=600&q=80" alt="Latte with art">
+                    <div class="gallery-caption"><span>Signature latte</span><p>Saffron maple cortado crowned with rosetta.</p></div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80" class="gallery-item glightbox" data-gallery="cafe" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Pastry assortment on table">
+                    <div class="gallery-caption"><span>Seasonal board</span><p>Pair your pour-over with house-fermented bites.</p></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="events-ribbon" aria-label="Upcoming happenings" data-reveal>
+            <div class="events-ribbon__inner">
+                <span class="events-ribbon__tag">Upcoming happenings</span>
+                <ul class="events-ribbon__list">
+                    <li><span class="events-ribbon__title">Thu Vinyl After Dark</span> - Blue Note sets with espresso flights</li>
+                    <li><span class="events-ribbon__title">Sat Sunrise Cupping</span> - Micro-lot tasting, 9am sharp</li>
+                    <li><span class="events-ribbon__title">Sun Makers Market</span> - Local ceramics pop-up on the patio</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonials" id="community" data-reveal>
+            <div class="section-heading">
+                <span class="tag">Loved by locals</span>
+                <h2>Friends, freelancers, and early risers make Cafe Lumen their ritual.</h2>
+            </div>
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <p class="testimonial-quote">"My favorite place to start the day before client calls. The staff remembers my 'Flat White, extra bright' and the Wi-Fi is rock solid."</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-name">Amina Patel</span>
+                        <span class="testimonial-role">Brand strategist &amp; regular</span>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                    <p class="testimonial-quote">"Best espresso flight in Seattle, period. Their barista jams and the pastry program keep my team inspired every Thursday stand-up."</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-name">Dennis Kim</span>
+                        <span class="testimonial-role">Founder, Studio 48</span>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                    <p class="testimonial-quote">"Neighborhood vibes with third-wave quality. The patio pop-ups and live vinyl nights make it more than a cafe - it is a community hub."</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-name">Maya Lopez</span>
+                        <span class="testimonial-role">Northlake Resident</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="location" id="location" data-reveal>
+            <div class="section-heading">
+                <span class="tag">Find us</span>
+                <h2>On the corner of Aurora &amp; 5th</h2>
+                <p>Weekdays 7am-6pm, weekends 8am-4pm. Street parking and bike racks available.</p>
+            </div>
+            <div class="location-grid">
+                <div class="map-wrapper">
+                    <div class="map-mask">
+                        <iframe
+                            class="map-embed"
+                            title="Map showing Cafe Lumen in Seattle"
+                            src="https://maps.google.com/maps?q=325%20Aurora%20Avenue%20Seattle%20WA&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="location-card" id="contact">
+                    <h3>Plan your visit</h3>
+                    <p>325 Aurora Avenue, Suite 102<br>Seattle, WA 98109</p>
+                    <p><strong>Call:</strong> <a href="tel:+12065551234">(206) 555-1234</a><br>
+                        <strong>Email:</strong> <a href="mailto:hello@cafelumen.co">hello@cafelumen.co</a></p>
+                    <p>Hosting a meetup or branded pop-up? We would love to collaborate. Reach out for private reservations or wholesale beans.</p>
+                    <a class="btn" href="mailto:events@cafelumen.co">Book the space</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand" data-reveal>
+                <div class="footer-mark">
+                    <span class="footer-mark__badge" aria-hidden="true">L</span>
+                    <div>
+                        <p class="footer-overline">Cafe Lumen</p>
+                        <p class="footer-tagline">Neighborhood roastery, daylight lounge.</p>
+                    </div>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-block">
+                        <h3>Visit</h3>
+                        <address>
+                            325 Aurora Avenue, Suite 102<br>
+                            Seattle, WA 98109<br>
+                            <a href="tel:+12065551234">(206) 555-1234</a>
+                        </address>
+                    </div>
+                    <div class="footer-block">
+                        <h3>Hours</h3>
+                        <ul>
+                            <li>Weekdays · 7am – 6pm</li>
+                            <li>Weekends · 8am – 4pm</li>
+                            <li>Vinyl nights · Thu 7pm</li>
+                        </ul>
+                    </div>
+                    <div class="footer-block footer-block--featured">
+                        <h3>This week</h3>
+                        <ul>
+                            <li><span class="footer-pill">Barista Lab</span> Latte art workshop · Wed 5pm</li>
+                            <li><span class="footer-pill">Roaster tour</span> Behind the beans · Sat 10am</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com" class="footer-social__link" aria-label="Follow Cafe Lumen on Instagram">
+                        <span aria-hidden="true" class="footer-social__icon">
+                            <svg viewBox="0 0 24 24" focusable="false"><path d="M7.75 3h8.5A4.75 4.75 0 0 1 21 7.75v8.5A4.75 4.75 0 0 1 16.25 21h-8.5A4.75 4.75 0 0 1 3 16.25v-8.5A4.75 4.75 0 0 1 7.75 3Zm0 2A2.75 2.75 0 0 0 5 7.75v8.5A2.75 2.75 0 0 0 7.75 19h8.5A2.75 2.75 0 0 0 19 16.25v-8.5A2.75 2.75 0 0 0 16.25 5h-8.5Zm4.25 2.5a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5Zm0 2a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5ZM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>
+                        </span>
+                        <span class="footer-social__text">@cafelumen</span>
+                    </a>
+                    <a href="https://spotify.com" class="footer-social__link" aria-label="Listen to Cafe Lumen on Spotify">
+                        <span aria-hidden="true" class="footer-social__icon">
+                            <svg viewBox="0 0 24 24" focusable="false"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm4.18 13.16a.75.75 0 0 0-.99-.34 9.53 9.53 0 0 1-4.27.95c-1.46 0-2.94-.34-4.4-.99a.75.75 0 1 0-.61 1.37c1.68.75 3.36 1.12 5.01 1.12 1.66 0 3.29-.36 4.85-1.08a.75.75 0 0 0 .41-1.03Zm.7-2.69a.75.75 0 0 0-.97-.42 12.3 12.3 0 0 1-4.9 1.05c-1.67 0-3.33-.33-4.9-.98a.75.75 0 1 0-.58 1.38 13.8 13.8 0 0 0 5.48 1.1c1.86 0 3.68-.37 5.37-1.12a.75.75 0 0 0 .42-.99Zm.62-2.8a.75.75 0 0 0-.9-.53A17 17 0 0 1 12 9.5c-1.94 0-3.86-.36-5.58-1.07a.75.75 0 1 0-.58 1.39 18.45 18.45 0 0 0 6.16 1.17c2.12 0 4.19-.37 6.09-1.12a.75.75 0 0 0 .41-.99Z"/></svg>
+                        </span>
+                        <span class="footer-social__text">Spotify mix</span>
+                    </a>
+                    <a href="mailto:hello@cafelumen.co" class="footer-social__link" aria-label="Email Cafe Lumen">
+                        <span aria-hidden="true" class="footer-social__icon">
+                            <svg viewBox="0 0 24 24" focusable="false"><path d="M5 5h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-.78.37L12 12.8l7.78-5.43A1 1 0 0 0 19 7H5Zm14 10a1 1 0 0 0 1-1V9.6l-7.1 4.94a1 1 0 0 1-1.14 0L4 9.6V16a1 1 0 0 0 1 1h14Z"/></svg>
+                        </span>
+                        <span class="footer-social__text">hello@cafelumen.co</span>
+                    </a>
+                </div>
+                <p class="footer-meta">&copy; <span id="year"></span> Cafe Lumen. Crafted with care in the Fremont neighborhood.</p>
+                <a href="#top" class="back-to-top">Back to top</a>
+            </div>
+            <form class="footer-newsletter" id="newsletter-form">
+                <label for="newsletter-email">Join the brew queue</label>
+                <p>Monthly specials, roastery drops, and events straight to your inbox.</p>
+                <div class="footer-newsletter__controls">
+                    <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+                    <button type="submit" class="btn btn-small">Sign me up</button>
+                </div>
+                <span class="newsletter-feedback" aria-live="polite"></span>
+                <div class="footer-awards" aria-label="Recent accolades">
+                    <span>Seattle Bean Awards · Best Neighborhood Cafe</span>
+                    <span>Slow Pour Society · Artisan Roaster 2024</span>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" data-modal-backdrop hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="roaster-modal-title" tabindex="-1">
+            <button type="button" class="modal__close" data-roaster-modal-close aria-label="Close roast spotlight">×</button>
+            <div class="modal__content">
+                <span class="modal__tag">Roaster spotlight</span>
+                <h2 id="roaster-modal-title">Halo Beriti Honey Lot</h2>
+                <p class="modal__intro">Hand-picked in Gedeb, Ethiopia · roasted on-site Thursdays</p>
+                <div class="modal__grid">
+                    <div class="modal__column">
+                        <h3>Tasting notes</h3>
+                        <ul>
+                            <li>Chamomile blossom aroma</li>
+                            <li>Stone fruit sweetness</li>
+                            <li>Honeycomb finish</li>
+                        </ul>
+                        <p class="modal__text">Best served as a 1:2 espresso or with a V60 at 203°F. Pairs with our smoked caramel kouign-amann.</p>
+                    </div>
+                    <div class="modal__column">
+                        <h3>Roast curve</h3>
+                        <p class="modal__text">Charge 394°F · 10% development · dropped at 401°F after 9:38.</p>
+                        <div class="modal-curve" aria-hidden="true">
+                            <svg viewBox="0 0 200 120">
+                                <path d="M10 90 C 60 30, 120 10, 190 60" fill="none" stroke="url(#curveGradient)" stroke-width="6" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="curveGradient" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0" stop-color="#38bdf8"/>
+                                        <stop offset="1" stop-color="#f97316"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <a class="btn btn-small modal__cta" href="mailto:roastery@cafelumen.co?subject=Halo%20Beriti%20pre-order">Pre-order beans</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
+
